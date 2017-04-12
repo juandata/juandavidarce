@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+
+        <style>
+            
+            html, body {
+  margin:0;
+  padding:0;
+  background-image: url("http://68.media.tumblr.com/e0b01561d5bef1779fca33e015cfafc7/tumblr_movr0cfaPS1s0b4wko9_1280.gif");
+background-size: cover;
+ 
+
+}
+
+.comic {
+  display:flex;
+  flex-wrap:wrap;
+  font-family:'Comic Sans', cursive;
+  
+  color: white;
+
+
+background-repeat: round;
+ 
+}
+
+
+
+.text {
+  background-color:#fff;
+  border:solid 2px #000;
+  margin:0;
+  padding:3px 10px;
+}
+
+.panel {
+                
+                width: 300px;
+                height: 300px;
+                border: 1px solid white;
+                /*TRUCO PARA HACER QUE LOS ITEMS DENTRO DEL CONTENEDOR NO DEJEN ESPACIO*/
+                flex-grow:1;
+            }
+            #porjda {
+                
+                border: 4px solid red;
+                width: 1400px;
+                height: 400px;
+                flex-grow:1;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <article class="comic">
+  <div class="panel">
+    <p >Bienvenido</p>
+    
+  </div>
+  <div class="panel">
+    <p >si redimensionas la ventana notarás algo </p>
+  </div>
+
+  
+     <div class="panel">
+    <p >Intenta con tamaños diferentes</p>
+  </div>
+ <div class="panel">
+
+
+    <p >El sitio está construido en flexboxes</p>
+  </div>
+
+
+
+  <div class="panel">
+    <p >Diseños mejorados</p>
+  </div>
+  <div id="porjda"class="panel">
+    <p >Diseñado por JDA</p>
+  </div>
+</article>
+    </body>
+</html>

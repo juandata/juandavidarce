@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="stylesheets/framework_file.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Plantilla 1 Flex by JDA</title>
+
+
+        <style>
+            body {
+                background-color: #775656;
+                max-height: 100%;
+                max-width: 100%;
+            }
+            
+            .cuerpo {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;  
+                display: -webkit-flex;
+                display: flexbox;
+                background-color: blue;
+                flex-flow: row;
+                flex-wrap:wrap;
+              
+            }
+            .c1  {
+                
+                width: 980px;
+                height: 300px;
+                background-color: green;
+                border: 3px solid black;
+               
+                
+            }
+            
+             .c2 {
+                
+               
+                width: 250px;
+                height: 300px;
+                background-color: yellow;
+                border: 3px solid black;
+             
+            }
+            
+             .c3 {
+                
+               
+                width: 250px;
+                height: 300px;
+                background-color: yellow;
+                border: 3px solid black;
+             
+            }
+            
+            break {
+            flex-basis: 100%;
+            width: 0px; 
+            height: 0px; 
+            overflow: hidden;
+}
+            
+        section {
+            display: flex;
+            flex-flow: row wrap;
+}
+break{
+            flex-basis: 100%;
+            width: 0px; 
+            height: 0px; 
+            overflow: hidden;
+}
+
+/* IE10 child fix: child elements must not be inline elements 
+   can be: block|inline-block|flex|inline-flex */
+section b, break{ 
+  display: inline-block; 
+}
+
+
+/* JUST FOR VISIBILITY, NOT IMPORTANT FOR FUNCTIONING */
+body,html{ width: 100%; height: 100%; margin:0;}
+section{
+  border: solid 2px black;
+  box-sizing: border-box;
+}
+
+section b{
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.b1{ background: #fce3b6;}
+.b2{ background: #c4e378;}
+.b3{ background: #c9eeff;}
+.b4{ background: #feab4d;}
+.b5{ background: #e5b4ad;}
+.b6{ background: #519600;}
+
+            
+        </style>
+
+    </head>
+    
+    
+    <body>
+        <div class="cuerpo">
+        
+        <div class="c1">1</div>
+        <div class="c2">2</div>
+           
+        <div class="c1">3</div>
+                <div class="c3">2</div>
+
+        </div>
+
+
+
+
+
+       
+
+       
+       
+    </body>
+
+
+
+
+</html>

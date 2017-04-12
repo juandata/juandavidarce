@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Flexbox Ejemplo 1</title>
+        <link rel="stylesheet" type="text/css" href="stylesheets/framework_file.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+        <style>
+            
+            
+   
+            
+          
+            
+            .contenedorflexible {
+    display: -webkit-flex;
+    display: flex;
+    -webkint-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -web-kit-allign-content: center;
+    allign-content: center;
+    width: 1400px;
+    height: 700px;
+    background-color: lightgrey;
+    flex-direction:row;
+    margin: auto;
+                            }
+
+            .flex-item {
+                
+                
+                background-color: cornflowerblue;
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+            }  
+            
+            
+            .card1 {
+                -webkit-align-self: flex-start;
+                 align-self: flex-start;
+            }
+            
+                        .card2 {
+                -webkit-align-self: flex-end;
+                 align-self: flex-end;
+            }
+            
+            
+            
+                     .card3 {
+                -webkit-align-self: flex-stretch;
+                 align-self: flex-stretch;
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            /*ESTILO TARJETA*/
+            .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    max-width: 150px;
+   max-height: 300px;
+   margin: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+}
+
+.container {
+    padding: 2px 16px;
+     width: 100px;
+                height: 100px;
+                margin: 10px;
+}
+             /*ESTILO TARJETA FINAL*/
+            
+  
+            
+            
+            
+          .flex-container2 {
+    display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    margin: 10px;
+}
+
+.item1 {
+    -webkit-flex: 2;
+    flex: 2;
+}
+
+.item2 {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.item3 {
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+      
+            
+        </style>
+    </head>
+    
+    <body>
+
+       <h1>PRACTICANDO CON W3SCHOOLS</h1>
+
+         <!--cubos azules-->
+        <div class="contenedorflexible">
+        <div class="flex-item">flex item 1</div>
+        <div class="flex-item">flex item 2</div>
+        <div class="flex-item">flex item 3</div> 
+   
+        <div class="flex-item">flex item 1</div>
+        <div class="flex-item">flex item 2</div>
+        <div class="flex-item">flex item 3</div> 
+     
+        <div class="flex-item">flex item 1</div>
+        <div class="flex-item">flex item 2</div>
+        <div class="flex-item">flex item 3</div> 
+            
+         <!--cubos azules-->
+            <!--TARJETAS DE PAPEL-->
+        <div class="card card1">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>1</b></h4> 
+        
+        </div>    
+            </div>
+         <div class="card card2">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>2</b></h4> 
+         
+        </div>    
+            </div>
+             <div class="card card3">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>3</b></h4> 
+         
+        </div>    
+            </div>
+             <div class="card card4">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>John Doe</b></h4> 
+        <p>Architect & Engineer</p> 
+        </div>    
+            </div>
+             <div class="card card5">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>John Doe</b></h4> 
+        <p>Architect & Engineer</p> 
+        </div>    
+            </div>
+             <div class="card card6">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>John Doe</b></h4> 
+        <p>Architect & Engineer</p> 
+        </div>    
+            </div>
+             <div class="card card7">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>John Doe</b></h4> 
+        <p>Architect & Engineer</p> 
+        </div>    
+            </div>
+
+                <div class="card card8">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>John Doe</b></h4> 
+        <p>Architect & Engineer</p> 
+        </div>    
+            </div>
+                <div class="card card9">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>John Doe</b></h4> 
+        <p>Architect & Engineer</p> 
+        </div>    
+            </div>
+                <div class="card card10">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>John Doe</b></h4> 
+        <p>Architect & Engineer</p> 
+        </div>    
+            </div>
+                <div class="card card11">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>John Doe</b></h4> 
+        <p>Architect & Engineer</p> 
+        </div>    
+            </div>    <div class="card card12">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>John Doe</b></h4> 
+        <p>Architect & Engineer</p> 
+        </div>    
+            </div>
+                <div class="card card13">   
+            <img src="https://juandavidarce.neocities.org/Images/perfil_piscina.jpg" alt="Avatar"style="width:100%">
+        <div class="container">
+        <h4><b>John Doe</b></h4> 
+        <p>Architect & Engineer</p> 
+        </div>    
+            </div>
+       
+</div>
+
+        <div class="flex-container">
+  <div class="flex-item item1">flex-start</div>
+  <div class="flex-item item2">flex-end</div>
+  <div class="flex-item item3">center</div>
+  <div class="flex-item item4">baseline</div>
+  <div class="flex-item item5">stretch</div>
+</div>
+
+        <div class="flex-container">
+  <div class="flex-item item1">flex item 1</div>
+  <div class="flex-item item2">flex item 2</div>
+  <div class="flex-item item3">flex item 3</div>  
+</div>
+
+
+        </body>
+
+</html>

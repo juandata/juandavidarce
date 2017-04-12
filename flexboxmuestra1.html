@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Flex box muestra 1 by JDA</title>
+        <style>
+
+            body {
+                margin: auto;
+                background-image: url("https://media.giphy.com/media/l0K4p54asXHiEfhrG/giphy.gif");
+                background-size: cover;
+            }
+            
+            .flex-container {
+                display: -webkit-fex;
+                display: flex;
+               
+                 flex-flow: row;
+                 flex-wrap: wrap;
+                     min-height: 714px;
+    min-width: 1263px;
+                 
+                 
+                 
+            }
+            
+            
+            .item1 {
+                border: 2px solid black;
+                width: 952px;
+                height:400px;
+                 
+            }
+            
+             .item2 {
+               
+                width: 300px;
+                height:300px;
+                
+                background-repeat: round;
+                margin-left: -159px;
+    margin-top: 41px;
+                
+                
+                
+            }
+            
+            .item3, .item4, .item5 {
+                position: relative;
+              border: 5px solid black;
+                width:618px;
+                height:300px;
+                background-image: url("images/ciudad.jpg"); 
+                 -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 14s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+            }
+            
+            .item5 {
+                
+                 background-image: url("images/heroes.jpg"); 
+            }
+            
+          @-webkit-keyframes example {
+                0% {background-position: 0px;}
+                  100% {background-position: 2400px;}
+                          
+
+            
+}
+
+/* Standard syntax */
+            @keyframes example {
+
+                0% {
+                    background-position: 0px;
+                }
+
+                100% {
+                    background-position: 2400px;
+                }
+            } 
+            
+            .mitad {
+                border: 2px solid black;
+                
+                width:  626px;
+    height: 329px;
+            }
+            
+          
+            
+            .imagen {
+                
+              background-image: url("images/ciudad.jpg"); 
+                position: relative;
+                left: 1220px;
+                
+               
+                top: -302px;
+                
+            }
+
+            
+           
+               .primeramitad {
+                background-image: url("https://media.giphy.com/media/Ulcoe1WQbBZ04/giphy.gif");  
+                background-repeat: no-repeat;
+            } 
+            .titulo {
+                
+                color: #3a88fe;
+            }
+        </style>
+
+    </head>
+    <body>
+
+
+        <div class="flex-container">
+            <div class="item1">Item 1
+            
+                <div class="mitad primeramitad"></div>
+            
+                  <div class="mitad"><h2 class="titulo">MUESTRA DISEÑADA CON HTML Y<span style="color: lightblue;"> CSS3 by JDA</span></h2></div>
+            </div>
+            
+             <span class="item2"> </span>
+           
+            
+             <div class="item3"></div> 
+        
+
+            <div class="item4"> </div> 
+
+           </div>
+
+
+        <div class="flex-container">
+         
+            
+             <div class="item5"></div> 
+        
+
+            <div class="item5"> </div> 
+            </div>
+        
+   
+        </div>
+      
+        
+        </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Flex box muestra 1 by JDA</title>
+        <style>
+
+            body {
+                display: -webkit-flex;
+                display: flexbox;
+                margin: auto;
+                background-image: url("https://media.giphy.com/media/l0K4p54asXHiEfhrG/giphy.gif");
+                background-size: cover;
+                
+            }
+            
+            .flex-container {
+                display: -webkit-fex;
+                display: flex;
+               
+                 flex-flow: row;
+                 flex-wrap: wrap;
+                     min-height: 714px;
+    min-width: 1263px;
+                 
+                 
+                 
+            }
+            
+            
+            .item1 {
+                
+                width: 626px;
+                height:400px;
+                
+            }
+            
+             .item2 {
+             
+                width: 300px;
+                height:300px;
+                
+                background-repeat: round;
+                margin-left: -159px;
+    margin-top: 41px;
+                
+                
+                
+            }
+            
+            .item3, .item4, .item5 {
+                position: relative;
+              border: 5px solid black;
+                width:618px;
+                height:300px;
+                background-image: url("images/ciudad.jpg"); 
+                 -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 14s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+            }
+            
+            .item5 {
+                
+                 background-image: url("images/heroes.jpg"); 
+            }
+            
+          @-webkit-keyframes example {
+                0% {background-position: 0px;}
+                  100% {background-position: 2400px;}
+                          
+
+            
+}
+
+/* Standard syntax */
+            @keyframes example {
+
+                0% {
+                    background-position: 0px;
+                }
+
+                100% {
+                    background-position: 2400px;
+                }
+            } 
+            
+            .mitad {
+                border: 2px solid black;
+                
+                width:  626px;
+    height: 329px;
+            }
+            
+          
+            
+            .imagen {
+                
+              background-image: url("images/ciudad.jpg"); 
+                position: relative;
+                left: 1220px;
+                
+               
+                top: -302px;
+                
+            }
+
+            
+           
+               .primeramitad {
+                background-image: url("https://media.giphy.com/media/Ulcoe1WQbBZ04/giphy.gif");  
+                background-repeat: no-repeat;
+            } 
+            .titulo {
+                
+                color: #3a88fe;
+            }
+            
+            
+            html, body {
+  margin:0;
+  padding:0;
+}
+
+.comic {
+  display:flex;
+  flex-wrap:wrap;
+  font-family:'Comic Sans', cursive;
+  padding:1vmin;
+}
+
+.panel {
+  background-color:#fff;
+  border:solid 2px #000;
+  box-shadow:0 6px 6px -6px #000;
+  display:inline-block;
+  flex:1 1;
+  height:200px;
+  margin:1vmin;
+  overflow:hidden;
+  position:relative;
+}
+
+.text {
+  background-color:#fff;
+  border:solid 2px #000;
+  margin:0;
+  padding:3px 10px;
+}
+
+.top-left {
+  left:-6px;
+  position:absolute;
+  top:-2px;
+  transform:skew(-15deg);
+}
+
+.bottom-right {
+  bottom:-2px;
+  position:absolute;
+  right:-6px;
+  transform:skew(-15deg);
+}
+
+.speech {
+  background-color:#fff;
+  border:solid 2px #000;
+  border-radius:12px;
+  display:inline-block;
+  margin:.5em;
+  padding:.5em 1em;
+  position:relative;
+}
+
+.speech:before {
+  border:solid 12px transparent;
+  border-left:solid 12px #000;
+  border-top:solid 12px #000;
+  bottom:-24px;
+  content:"";
+  height:0;
+  left:24px;
+  position:absolute;
+  transform:skew(-15deg);
+  width:0;
+}
+
+.speech:after {
+  border:solid 10px transparent;
+  border-left:solid 10px #fff;
+  border-top:solid 10px #fff;
+  bottom:-19px;
+  content:"";
+  height:0;
+  left:27px;
+  position:absolute;
+  transform:skew(-15deg);
+  width:0;
+}
+
+.panel:nth-child(1) {
+  flex-basis: 400px;
+}
+.panel:nth-child(2) {
+  flex-basis: 200px;
+}
+.panel:nth-child(3) {
+  flex-basis: 200px;
+}
+.panel:nth-child(4) {
+  flex-basis: 200px;
+}
+.panel:nth-child(5) {
+  flex-basis: 200px;
+}
+.panel:nth-child(6) {
+  flex-basis: 200px;
+}
+.panel:nth-child(7) {
+  flex-basis: 400px;
+}
+.panel:nth-child(8) {
+  flex-basis: 200px;
+}
+.panel:nth-child(9) {
+  flex-basis: 200px;
+}
+
+/* background colours */
+
+.panel:nth-child(4n+1) {
+  background-image:radial-gradient(circle, yellow, orange);
+}
+
+.panel:nth-child(4n+2) {
+  background-image:radial-gradient(circle, lightblue, deepskyblue);
+}
+
+.panel:nth-child(4n+3) {
+  background-image:radial-gradient(circle, palegreen, yellowgreen);
+}
+
+.panel:nth-child(4n+4) {
+  background-image:radial-gradient(circle, lightcoral, tomato);
+}
+        </style>
+
+    </head>
+    <body>
+
+
+        <div class="flex-container">
+            <div class="item1">Item 1
+            
+                <div class="mitad primeramitad"></div>
+            
+                  <div class="mitad"><h2 class="titulo">MUESTRA DISEÑADA CON HTML Y<span style="color: lightblue;"> CSS3 by JDA</span></h2></div>
+            </div>
+            
+             <span class="item2"> </span>
+           
+            
+             <div class="item3"></div> 
+        
+
+            <div class="item4"> </div> 
+
+           </div>
+
+
+        <div class="flex-container">
+         
+            
+             <div class="item5"></div> 
+        
+
+            <div class="item5"> </div> 
+            </div>
+    
+       </div>
+        
+        </div>
+        </div>
+
+
+        
+
+    </body>
+</html>

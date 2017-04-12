@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>textoanimadoejemplo</title>
+
+        <style>
+            
+            .home-animation {
+	padding-top:60px;
+}
+
+.fade-in {
+	animation-name: fadeInUp;
+	animation-iteration-count: once;
+	animation-duration: 2s;
+	&.first {
+		max-height: 10px;
+	}
+}
+.fade-in.second {
+	max-height: 30px;
+	opacity:0;
+	animation-delay:3s;
+	animation-fill-mode: forwards;
+}
+.fade-in.third {
+	opacity:0;
+	animation-duration: 3s;
+	animation-delay:7s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.shrink {
+	animation-name: zoomOut;
+	animation-iteration-count: once;
+	animation-duration: 2s;
+}
+.shrink.first {
+	animation-delay:3s;
+	animation-fill-mode: forwards;
+}
+.shrink.second {
+	animation-delay:7s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1) translateY(0);
+    color: $black;
+  }
+
+  100% {
+    transform: scale(.5) translateY(-100px);
+    color: $gray;
+  }
+
+}
+.zoom-in {
+	opacity:0;
+	animation-name: zoomIn;
+	animation-iteration-count: once;
+	animation-delay:10s;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(.8, .8, .8);
+  }
+
+  100% {
+  	opacity: 1;
+  	transform: scale3d(1, 1, 1);
+    
+  }
+}
+            
+        </style>
+    </head>
+    <body>
+        <div class="fade-in first">
+  <h1 class="shrink first">Diseños innovadores y originales</h1></div>
+<div class="fade-in second">
+  <h1 class="shrink second">visite juandavidarce.neocites.org para más información</h1></div>
+<div class="fade-in animation third">
+  <h1>Está página ha sido diseñada en HTML5 y CSS3</h1>
+</div>
+<div class="row zoom-in">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="flex-video widescreen">
+      <iframe width="560" height="315" src="http://www.youtube.com/embed/szj59j0hz_4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <a href="https://juandavidarce.neocities.org/" class="pull-right all-caps small">Ver más<i class="icon-caret-right"></i></a>
+  </div>
+</div>
+    </body>
+</html>
